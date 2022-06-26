@@ -8,8 +8,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
+app.get(['/', '/play'], (req, res) => res.sendFile(__dirname + '/static/index.html'));
 app.use(express.static('./static'));
-app.get('*', (req, res) => res.sendFile(__dirname + '/static/index.html'));
 
 const games = new Map();
 const newGame = (oldGame = null) => {
