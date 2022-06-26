@@ -1,0 +1,19 @@
+{
+  "name": "ticktacktoek-server",
+  "version": "0.1.0",
+  "repository": "https://github.com/likuilin/ticktacktoek",
+  "author": "kuilin",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server.js",
+    "watch": "supervisor server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
